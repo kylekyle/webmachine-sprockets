@@ -13,10 +13,11 @@ Gem::Specification.new do |s|
   s.summary     = %q{Webmachine for Ruby: Sprockets integration}
   s.description = s.summary
 
-  s.add_dependency 'webmachine'
-  s.add_dependency 'sprockets'
+  s.add_dependency 'webmachine', '~> 1.0'
+  s.add_dependency 'sprockets',  '~> 2.0'
   
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'rack'
 
   s.files         = `git ls-files`.split('\n') - ['.gitignore', '.rspec', '.travis.yml']
   s.test_files    = `git ls-files -- spec/*`.split('\n')

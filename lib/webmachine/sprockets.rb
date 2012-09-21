@@ -6,7 +6,8 @@ require 'webmachine/sprockets/version'
 
 module Webmachine
   module Sprockets
-    def resource_for(sprockets_env)
+    def self.resource_for(sprockets)
+      Resource.dup.tap {|r| r.sprockets = sprockets }
     end
   end
 end

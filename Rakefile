@@ -1,4 +1,8 @@
-task :default => :spec
+require 'rake/testtask'
 
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new :spec
+task :default => :test
+
+Rake::TestTask.new do |t|
+  t.libs << 'test'
+  t.libs << Gem.loaded_specs['sprockets'].gem_dir + '/test'
+end

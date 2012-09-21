@@ -16,6 +16,7 @@ Usage
 -----
 
 ```ruby
+require 'webmachine'
 require 'webmachine/sprockets'
 
 MyApp = Webmachine::Application.new do |app|
@@ -23,7 +24,7 @@ MyApp = Webmachine::Application.new do |app|
   sprockets.append_path 'app/assets/javascripts'
 
   resource = Webmachine::Sprockets.resource_for(sprockets)
-  app.add_route [ '/assets', '*' ], resource
+  app.add_route [ 'assets', '*' ], resource
 end
 ```
 
