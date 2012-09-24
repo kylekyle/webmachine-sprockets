@@ -19,8 +19,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rack'
 
-  s.files         = `git ls-files`.split('\n') - ['.gitignore', '.rspec', '.travis.yml']
-  s.test_files    = `git ls-files -- spec/*`.split('\n')
-  s.executables   = `git ls-files -- bin/*`.split('\n').map{ |f| File.basename(f) }
+  s.files         = `git ls-files`.split("\n") - ['.gitignore', '.travis.yml']
+  s.test_files    = `git ls-files -- test/*`.split("\n")
   s.require_paths = ['lib']
 end
