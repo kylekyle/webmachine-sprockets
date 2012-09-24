@@ -5,4 +5,4 @@ rvm:
   - rbx
   - jruby
 before_install:
-  - git clone https://github.com/sstephenson/sprockets.git
+  - git clone https://github.com/sstephenson/sprockets.git ../sprockets
