@@ -1,3 +1,5 @@
+Enumerator = Enumerable::Enumerator unless Object.const_defined?(:Enumerator)
+
 module Webmachine
   module Sprockets
     class Resource < ::Webmachine::Resource
