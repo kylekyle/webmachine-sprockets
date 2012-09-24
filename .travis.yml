@@ -4,6 +4,5 @@ rvm:
   - 1.9.3
   - rbx
   - jruby
-before_script:
-  - git clone https://github.com/sstephenson/sprockets.git ../sprockets
-  - bundle
+before_install:
+  - git clone https://github.com/sstephenson/sprockets.git
