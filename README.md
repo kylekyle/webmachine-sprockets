@@ -1,5 +1,4 @@
-webmachine-sprockets
-====================
+# webmachine-sprockets [![Build Status](https://travis-ci.org/lgierth/webmachine-sprockets.png?branch=master)](https://travis-ci.org/lgierth/webmachine-sprockets)
 
 Webmachine for Ruby: Sprockets integration
 
