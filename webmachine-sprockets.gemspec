@@ -2,6 +2,8 @@
 $:.push File.expand_path('../lib', __FILE__)
 require 'webmachine/sprockets/version'
 
+require 'date'
+
 Gem::Specification.new do |s|
   s.name        = 'webmachine-sprockets'
   s.version     = Webmachine::Sprockets::VERSION
