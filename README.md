@@ -38,7 +38,9 @@ Contributing
 You can also open an issue for discussion first, if you like.
 
 
-License
--------
+Unlicense
+---------
 
-webmachine-sprockets is subject to an MIT-style license (see LICENSE file).
+webmachine-sprockets is free and unencumbered public domain software. For more
+information, see [unlicense.org](http://unlicense.org/) or the accompanying
+UNLICENSE file.

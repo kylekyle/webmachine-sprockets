@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/lgierth/webmachine-sprockets'
   s.summary     = %q{Webmachine for Ruby: Sprockets integration}
   s.description = s.summary
+  s.license     = 'Public Domain'
 
   s.add_dependency 'webmachine', '~> 1.0'
   s.add_dependency 'sprockets',  '~> 2.0'
