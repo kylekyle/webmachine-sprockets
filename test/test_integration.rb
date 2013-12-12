@@ -3,6 +3,7 @@ require 'webmachine/adapters/rack'
 require 'webmachine/sprockets'
 
 require 'test_server'
+Sprockets::Environment
 
 class TestServer
   def webmachine_app(env)
