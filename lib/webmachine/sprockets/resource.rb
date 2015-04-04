@@ -14,8 +14,7 @@ module Webmachine
       def finish_request
         response.code = @rack_response[0]
         response.headers.clear
-        response.headers.merge!(@rack_response[1])
-        response.body = Enumerator.new(@rack_response[2]).to_a.join
+        response.body = [*@rack_response[2]].join
       end
 
       private
